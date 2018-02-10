@@ -1,0 +1,19 @@
+{
+  "name": "rachelromee",
+  "version": "1.0.0",
+  "description": "my playground",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+	   "start": "node st"
+  },
+  "repository": {
+    "type": "git",
+    "url": "playground"
+  },
+  "keywords": [
+    "portfolio"
+  ],
+  "author": "Rachel Romée",
+  "license": "UNLICENSED"
+}

@@ -1,9 +1,9 @@
 var HtmlWebpackPlugin = require("html-webpack-plugin");
 
 var webpackConfig = {
-	entry: "./src/index.js", // entry page - if multiple it's an object
+	entry: "./views/index.js", // entry page - if multiple it's an object
 	output: { // files that you will deploy
-		path: "build", // which folder to place bundle in
+		path: "public", // which folder to place bundle in
 		filename: "bundle.js" // name of bundled file
 	},
 	module: {

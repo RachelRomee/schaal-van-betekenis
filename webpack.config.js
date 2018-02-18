@@ -1,9 +1,11 @@
+const path = require('path');
 var HtmlWebpackPlugin = require("html-webpack-plugin");
 
 var webpackConfig = {
 	entry: "./assets/js/index.js", // entry page - if multiple it's an object
 	output: { // files that you will deploy
-		path: "public", // which folder to place bundle in
+		// path: "public", // which folder to place bundle in
+		path: path.resolve(__dirname, 'public'),
 		filename: "bundle.js" // name of bundled file
 	},
 	module: {

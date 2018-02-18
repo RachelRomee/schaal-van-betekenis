@@ -8,42 +8,40 @@ var webpackConfig = {
 		filename: "bundle.js" // name of bundled file
 	},
 	module: {
-		loaders: [ // how we want installed loaders to process our files
-			{
+		rules: [
+			{ // how we want installed loaders to process our files
 				loader: "babel-loader", // handles all our js files
 				test: /\.js$/
 			},
 			{
-				loaders: ["style-loader", 'css-loader', 'sass-loader'],
-				 test:/\.(s*)css$/,
+				loaders: [
+					"style-loader", 'css-loader', 'sass-loader'
+				],
+				test: /\.(s*)css$/
 			},
 			// {
 			// 	loaders: ["url-loader", "img-loader"],
 			// 	test: /\.png$/
 			// },
 			{
-            test: /\.(png|jp(e*)g|gif|svg)$/,
-            use: [{
-                loader: 'url-loader',
-                options: {
-                    limit: 8000, // Convert images < 8kb to base64 strings
-                    name: 'img/[hash]-[name].[ext]'
-                }
-            }]
-        }
+				test: /\.(png|jp(e*)g|gif|svg)$/,
+				use: [
+					{
+						loader: 'url-loader',
+						options: {
+							limit: 8000, // Convert images < 8kb to base64 strings
+							name: 'img/[hash]-[name].[ext]'
+						}
+					}
+				]
+			}
 
 		]
 	},
-	plugins: [
-		new HtmlWebpackPlugin({
-			template: "ejs-render-loader!./views/index.ejs"
-		})
-	]
+	plugins: [new HtmlWebpackPlugin({template: "ejs-render-loader!./views/index.ejs"})]
 };
 
 module.exports = webpackConfig;
-
-
 
 /**
 // @TODO

@@ -17,6 +17,10 @@ var webpackConfig = {
 			{
 				loaders: ["style-loader", 'css-loader', 'sass-loader'],
 				test: /\.scss$/
+			},
+			{
+				loaders: ["url-loader", "img-loader"],
+				test: /\.png$/
 			}
 		]
 	},

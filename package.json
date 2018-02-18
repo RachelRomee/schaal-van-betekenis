@@ -1,37 +1,38 @@
 {
-	"name": "rachelromee",
-	"version": "1.0.0",
-	"description": "my playground",
-	"main": "server.js",
-	"scripts": {
-		"test": "test",
-		"start": "node server.js"
-	},
-	"repository": {
-		"type": "git",
-		"url": "playground"
-	},
-	"keywords": [
-		"portfolio"
-	],
-	"author": "Rachel Romée",
-	"license": "UNLICENSED",
-	"devDependencies": {
-		"babel-loader": "^6.2.4",
-		"babel-preset-es2015": "^6.9.0",
-		"babel-preset-stage-2": "^6.11.0",
-		"css-loader": "^0.23.1",
-		"html-webpack-plugin": "^2.22.0",
-		"node-sass": "^3.8.0",
-		"sass-loader": "^4.0.0",
-		"style-loader": "^0.13.1",
-		"webpack": "^1.13.1"
-	},
-	"dependencies": {
-		"ejs": "^2.5.7",
-		"http": "0.0.0",
-		"jquery": "^3.1.0",
-		"path": "^0.12.7"
-
-	}
+  "name": "rachelromee",
+  "version": "1.0.0",
+  "description": "my playground",
+  "main": "server.js",
+  "scripts": {
+    "test": "test",
+    "start": "node server.js",
+    "build": "webpack --optimize-minimize"
+  },
+  "repository": {
+    "type": "git",
+    "url": "playground"
+  },
+  "keywords": [
+    "portfolio"
+  ],
+  "author": "Rachel Romée",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "babel-loader": "^6.2.4",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-stage-2": "^6.11.0",
+    "css-loader": "^0.23.1",
+    "html-webpack-plugin": "^2.22.0",
+    "node-sass": "^3.8.0",
+    "sass-loader": "^4.0.0",
+    "style-loader": "^0.13.1",
+    "webpack": "^1.13.1"
+  },
+  "dependencies": {
+    "babel-core": "^6.26.0",
+    "ejs": "^2.5.7",
+    "http": "0.0.0",
+    "jquery": "^3.1.0",
+    "path": "^0.12.7"
+  }
 }

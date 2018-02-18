@@ -9,14 +9,14 @@ var webpackConfig = {
 	module: {
 		loaders: [ // how we want installed loaders to process our files
 			{
-				loader: "babel-loader" // handles all our js files
+				loader: "babel-loader", // handles all our js files
 				test: /\.js$/
 			}
 		]
 	},
 	plugins: [
 		new HtmlWebpackPlugin({
-			template: "src/index.ejs"
+			template: "./views/index.ejs"
 		})
 	]
 };

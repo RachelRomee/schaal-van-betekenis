@@ -8,7 +8,7 @@ var webpackConfig = {
 		filename: "bundle.js" // name of bundled file
 	},
 	module: {
-		rules: [
+		loaders: [
 			{ // how we want installed loaders to process our files
 				loader: "babel-loader", // handles all our js files
 				test: /\.js$/
@@ -19,22 +19,22 @@ var webpackConfig = {
 				],
 				test: /\.(s*)css$/
 			},
-			// {
-			// 	loaders: ["url-loader", "img-loader"],
-			// 	test: /\.png$/
-			// },
 			{
-				test: /\.(png|jp(e*)g|gif|svg)$/,
-				use: [
-					{
-						loader: 'url-loader',
-						options: {
-							limit: 8000, // Convert images < 8kb to base64 strings
-							name: 'img/[hash]-[name].[ext]'
-						}
-					}
-				]
-			}
+				loaders: ["url-loader", "img-loader"],
+				test: /\.png$/
+			},
+			// {
+			// 	test: /\.(png|jp(e*)g|gif|svg)$/,
+			// 	use: [
+			// 		{
+			// 			loader: 'url-loader',
+			// 			options: {
+			// 				limit: 8000, // Convert images < 8kb to base64 strings
+			// 				'name': 'img/[hash]-[name].[ext]'
+			// 			}
+			// 		}
+			// 	]
+			// }
 
 		]
 	},

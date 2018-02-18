@@ -1,0 +1,37 @@
+.main-wrapper {
+	text-align: center;
+}
+
+
+.title {
+	position: relative;
+	// background-color: orange;
+
+
+	img {
+		position: relative;
+		z-index: 10;
+		width: 100%;
+	}
+	// background-image: url('./assets/img/rachelromee.png') no-repeat center center;
+	// background-image: url('../img/rachelromee.png') no-repeat center center;
+	// background-image: url('rachelromee.png') no-repeat center center;
+	// background-size: contain;
+	&:before {
+		content: "";
+		background-color: orange;
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 2%;
+		animation: fill-to-left 2s forwards;
+	}
+}
+
+
+@keyframes fill-to-left {
+	to {
+		width: 100%;
+	}
+}

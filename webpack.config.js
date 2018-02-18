@@ -13,6 +13,10 @@ var webpackConfig = {
 			{
 				loader: "babel-loader", // handles all our js files
 				test: /\.js$/
+			},
+			{
+				loaders: ["style-loader", 'css-loader', 'sass-loader'],
+				test: /\.scss$/
 			}
 		]
 	},

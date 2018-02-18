@@ -1,7 +1,7 @@
 var HtmlWebpackPlugin = require("html-webpack-plugin");
 
 var webpackConfig = {
-	entry: "./views/index.js", // entry page - if multiple it's an object
+	entry: "./assets/js/index.js", // entry page - if multiple it's an object
 	output: { // files that you will deploy
 		path: "public", // which folder to place bundle in
 		filename: "bundle.js" // name of bundled file
@@ -16,7 +16,7 @@ var webpackConfig = {
 	},
 	plugins: [
 		new HtmlWebpackPlugin({
-			template: "./views/index.ejs"
+			template: "ejs-render-loader!./views/index.ejs"
 		})
 	]
 };

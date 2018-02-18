@@ -10,8 +10,7 @@ npm-debug.log*
 .lock-wscript
 
 # Compiled binary addons (http://nodejs.org/api/addons.html)
-# uncomment to hide public files - so index html and bundle js
-# public
+public
 
 # Dependency directories
 node_modules

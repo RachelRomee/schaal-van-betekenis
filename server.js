@@ -31,3 +31,9 @@ app.get('/', function(req, res) {
    page_name = 'home';
     res.render('index');
 });
+
+
+/* ROUTERS INSTELLEN
+------------------------------------------------------- */
+// Express looks for assets in public folder
+app.use(express.static(__dirname + '/public'));

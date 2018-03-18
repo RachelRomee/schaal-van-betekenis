@@ -6,17 +6,13 @@
 
 /* VARS
 ------------------------------------------------ */
-@import 'vars/mixins';
 @import 'vars/typography';
 @import 'vars/variables';
+@import 'vars/colors';
+@import 'vars/mixins';
 
 
 /* COMPONENTS
 ------------------------------------------------ */
 @import 'components/entry';
 @import 'components/test';
-
-
-
-/* ------------------------------------------------
-COMPONENTS */

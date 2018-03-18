@@ -8,9 +8,7 @@ import "../styles/base.scss";
 import { test } from "./components/test";
 import { globalFunctions } from "./globalFunctions";
 
+
+/*
+------------------------------------------------ */
 test();
-console.log(globalFunctions);
-
-
-console.log('you are awesome');
-console.log('rachel is lief');

@@ -1,9 +1,6 @@
 # System files
 .DS_Store
 
-# Inspiration files
-inspiration
-
 # Logs
 logs
 *.log
